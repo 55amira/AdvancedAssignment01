@@ -85,6 +85,27 @@
             //Console.WriteLine($"P01 = {P01}");
             //Console.WriteLine($"P02 = {P02}"); 
             #endregion
+            #region Generic EX : LinnerSearch
+
+            //int[] Numbers = { 11, 21, 3, 4, 5, -1, 6, 7, 8 };
+
+            //int index =Healper.LinnerSearch(Numbers, 21);
+
+            //index = Healper.LinnerSearch(Numbers, -1);
+
+
+
+            //Employee E01 = new Employee() { Id = 1, Name = "Ahmed", Age = 22, Salary = 12000 };
+            //Employee E02 = new Employee() { Id = 2, Name = "Ali", Age = 21, Salary = 11000 };
+            //Employee E03 = new Employee() { Id = 3, Name = "Mona", Age = 24, Salary = 13000 };
+            //Employee E04 = new Employee() { Id = 4, Name = "Mohemed", Age = 23, Salary = 15000 };
+
+            //Employee[] employees = { E01, E02, E03, E04 };
+
+            //index = Healper.LinnerSearch(employees, E03);
+
+            //Console.WriteLine($"index = {index}"); 
+            #endregion
         }
     }
 }
