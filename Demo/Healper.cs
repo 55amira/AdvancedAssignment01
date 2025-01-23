@@ -9,6 +9,7 @@ namespace Demo
     internal static class Healper/*<T>*/
     {
 
+
         #region Generic EX : LinnerSearch
         //public static int LinnerSearch<T>(T[] Arr, T value)
         //{

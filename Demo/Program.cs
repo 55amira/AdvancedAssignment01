@@ -85,6 +85,7 @@
             //Console.WriteLine($"P01 = {P01}");
             //Console.WriteLine($"P02 = {P02}"); 
             #endregion
+
             #region Generic EX : LinnerSearch
 
             //int[] Numbers = { 11, 21, 3, 4, 5, -1, 6, 7, 8 };
@@ -105,6 +106,20 @@
             //index = Healper.LinnerSearch(employees, E03);
 
             //Console.WriteLine($"index = {index}"); 
+            #endregion
+
+            #region Equality in class or struct
+            //Employee E01 = new Employee() { Id = 1, Name = "Ahmed", Age = 22, Salary = 12000 };
+            //Employee E02 = new Employee() { Id = 1, Name = "Ahmed", Age = 22, Salary = 12000 };
+            ////Employee E02 = new Employee() { Id = 2, Name = "Ali", Age = 21, Salary = 11000 };
+
+            ////if (E01.Equals(E02))
+            ////    Console.WriteLine("E01 = E02");
+            ////else Console.WriteLine("E01 != E02");
+
+            //if (E01==(E02))
+            //    Console.WriteLine("E01 = E02");
+            //else Console.WriteLine("E01 != E02"); 
             #endregion
         }
     }
