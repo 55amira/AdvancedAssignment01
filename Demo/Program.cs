@@ -121,6 +121,29 @@
             //    Console.WriteLine("E01 = E02");
             //else Console.WriteLine("E01 != E02"); 
             #endregion
+
+            #region Generic Ex: BubbleSort
+            //int[] Numbers = { 1, 7, 8, 5, 4, 0, 6, 9, 25, 12, 96, 14 };
+            //Healper.Print(Numbers);
+            //Console.WriteLine();
+            //Healper.BubbleSort(Numbers);
+            //Healper.Print(Numbers);
+
+            //Point[] points =
+            //{
+            //    new Point(4,4),
+            //    new Point(1,1),
+            //    new Point(5,5),
+            //    new Point(2,2),
+            //    new Point(6,6),
+            //    new Point(3,3),
+
+            //};
+
+            //Healper.BubbleSort(points);
+            //Healper.Print(points);
+            //Console.WriteLine(points); 
+            #endregion
         }
     }
 }
