@@ -180,9 +180,13 @@
 
             //Employee[] employees = { E01, E02, E03, E04 };
 
-            //int index = Healper.LinnerSearch<Employee>(employees, new Employee() { Name = "Mona" },new EmployeeEquatableComparerName());
+            //Healper.Print(employees);
+            ////Healper.BubbleSort(employees,new EmployeeComparerSalary());
+            //Healper.BubbleSort(employees, new EmployeeComparerSalary());
+            //int index = Healper.LinnerSearch<Employee>(employees, new Employee() { Name = "Mona" }, new EmployeeEquatableComparerName());
 
             //Console.WriteLine($"index = {index}");
-        }
+
+        }  
     }
 }

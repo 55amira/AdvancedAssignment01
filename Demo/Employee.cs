@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Demo
 {
-    internal class EmployeeEquatableComparerName : IEqualityComparer<Employee>
+    internal class EmployeeEquatableComparerName : IEqualityComparer<Employee> 
     {
         public bool Equals(Employee? x, Employee? y)
         {
@@ -17,6 +17,23 @@ namespace Demo
         public int GetHashCode([DisallowNull] Employee obj)
         {
              return HashCode.Combine(obj.Name);
+        }
+    }
+
+    internal class EmployeeComparerSalary : IComparer<Employee>
+    {
+        public int Compare (Employee? x, Employee? y)
+        {
+            return x.Salary.CompareTo (y.Salary);
+        }
+
+       
+    }
+    internal class EmployeeComparerNameLength : IComparer<Employee>
+    {
+        public int Compare(Employee? x, Employee? y)
+        {
+            return x.Name.Length.CompareTo(y.Name.Length);
         }
     }
     internal class Employee : IComparable<Employee>, IEquatable<Employee>

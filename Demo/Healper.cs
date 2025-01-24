@@ -26,7 +26,7 @@ namespace Demo
 
             return -1;
         }
-        public static void BubbleSort<T>(T[] Arr) where T : IComparable
+        public static void BubbleSort<T>(T[] Arr , IComparer<T> comparer) where T : IComparable 
         {
             if (Arr?.Length > 0)
             {
@@ -43,6 +43,7 @@ namespace Demo
             }
 
         }
+        
         public static void BubbleSort(int[] Arr)
         {
             if(Arr?.Length>0)
