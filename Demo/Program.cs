@@ -159,6 +159,18 @@
             //else Console.WriteLine("P01<P02"); 
             #endregion
 
+            Employee E01 = new Employee() { Id = 1, Name = "Ahmed", Age = 22, Salary = 12000 };
+           // Employee E02 = new Employee() { Id = 1, Name = "Ahmed", Age = 22, Salary = 12000 };
+            Employee E02 = new Employee() { Id = 2, Name = "Ali", Age = 21, Salary = 11000 };
+
+            if (E01.Equals(null))
+                Console.WriteLine("E01 = E02");
+            else Console.WriteLine("E01 != E02");
+
+            //if (E01 == (E02))
+            //    Console.WriteLine("E01 = E02");
+            //else Console.WriteLine("E01 != E02");
+
         }
     }
 }
