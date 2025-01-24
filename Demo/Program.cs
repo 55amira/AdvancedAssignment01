@@ -144,6 +144,21 @@
             //Healper.Print(points);
             //Console.WriteLine(points); 
             #endregion
+
+
+            #region is Ans as Operators
+            //Point p01 = new Point(4, 4);
+            //Point p02 = new Point(1, 1);
+
+            ////if (p01.CompareTo(p02) > 0)
+            ////    Console.WriteLine("P01>P02");
+            ////else Console.WriteLine("P01<P02");
+
+            //if (p01.CompareTo("Ahmed") > 0)
+            //    Console.WriteLine("P01>P02");
+            //else Console.WriteLine("P01<P02"); 
+            #endregion
+
         }
     }
 }

@@ -21,13 +21,48 @@ namespace Demo
             return $"(X = {X} , Y = {Y})";
         }
 
+        //public int CompareTo(object? obj)
+        //{
+        //    Point p = (Point)obj;
+
+        //    if(X==p.X)return Y.CompareTo(p.X);
+
+        //    return X.CompareTo(p.X);
+        //}
+
+        //public int CompareTo(object? obj)
+        //{
+        //    if(obj is not null)
+        //    {
+        //        if (obj is Point P)
+        //        {
+        //            //Point p = (Point)obj;
+
+        //            if (X == P.X) return Y.CompareTo(P.X);
+
+        //            return X.CompareTo(P.X);
+
+        //        }
+
+        //    }
+        //    return -1 ;
+
+        //}
+
         public int CompareTo(object? obj)
         {
-            Point p = (Point)obj;
+            Point P = obj as Point;
 
-            if(X==p.X)return Y.CompareTo(p.X);
+            if (obj is not null)
+            {
 
-            return X.CompareTo(p.X);
+                    if (X == P.X) return Y.CompareTo(P.X);
+
+                    return X.CompareTo(P.X);
+
+            }
+            return -1;
+
         }
     }
 }
