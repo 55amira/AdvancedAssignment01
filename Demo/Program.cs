@@ -159,18 +159,30 @@
             //else Console.WriteLine("P01<P02"); 
             #endregion
 
-            Employee E01 = new Employee() { Id = 1, Name = "Ahmed", Age = 22, Salary = 12000 };
-           // Employee E02 = new Employee() { Id = 1, Name = "Ahmed", Age = 22, Salary = 12000 };
-            Employee E02 = new Employee() { Id = 2, Name = "Ali", Age = 21, Salary = 11000 };
+            // Employee E01 = new Employee() { Id = 1, Name = "Ahmed", Age = 22, Salary = 12000 };
+            //// Employee E02 = new Employee() { Id = 1, Name = "Ahmed", Age = 22, Salary = 12000 };
+            // Employee E02 = new Employee() { Id = 2, Name = "Ali", Age = 21, Salary = 11000 };
 
-            if (E01.Equals(null))
-                Console.WriteLine("E01 = E02");
-            else Console.WriteLine("E01 != E02");
+            // if (E01.Equals(null))
+            //     Console.WriteLine("E01 = E02");
+            // else Console.WriteLine("E01 != E02");
 
-            //if (E01 == (E02))
-            //    Console.WriteLine("E01 = E02");
-            //else Console.WriteLine("E01 != E02");
+            // //if (E01 == (E02))
+            // //    Console.WriteLine("E01 = E02");
+            // //else Console.WriteLine("E01 != E02");
 
+
+
+            //Employee E01 = new Employee() { Id = 1, Name = "Ahmed", Age = 22, Salary = 12000 };
+            //Employee E02 = new Employee() { Id = 2, Name = "Ali", Age = 21, Salary = 11000 };
+            //Employee E03 = new Employee() { Id = 3, Name = "Mona", Age = 24, Salary = 13000 };
+            //Employee E04 = new Employee() { Id = 4, Name = "Mohemed", Age = 23, Salary = 15000 };
+
+            //Employee[] employees = { E01, E02, E03, E04 };
+
+            //int index = Healper.LinnerSearch<Employee>(employees, new Employee() { Name = "Mona" },new EmployeeEquatableComparerName());
+
+            //Console.WriteLine($"index = {index}");
         }
     }
 }

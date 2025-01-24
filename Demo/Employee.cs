@@ -7,6 +7,18 @@ using System.Threading.Tasks;
 
 namespace Demo
 {
+    internal class EmployeeEquatableComparerName : IEqualityComparer<Employee>
+    {
+        public bool Equals(Employee? x, Employee? y)
+        {
+            return x.Name  ==(y.Name);
+        }
+
+        public int GetHashCode([DisallowNull] Employee obj)
+        {
+             return HashCode.Combine(obj.Name);
+        }
+    }
     internal class Employee : IComparable<Employee>, IEquatable<Employee>
     {
         public int Id  { get; set; }

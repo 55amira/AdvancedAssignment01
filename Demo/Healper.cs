@@ -8,6 +8,24 @@ namespace Demo
 {
     internal static class Healper/*<T>*/
     {
+        public static int LinnerSearch<T>(T[] Arr, T value,IEqualityComparer<T> equalityComparer)
+        {
+
+            if (Arr?.Length > 0)
+            {
+
+                for (int i = 0; i < Arr.Length; i++)
+                {
+                    if (equalityComparer.Equals(Arr[i],value))
+                        return i;
+
+                }
+
+
+            }
+
+            return -1;
+        }
         public static void BubbleSort<T>(T[] Arr) where T : IComparable
         {
             if (Arr?.Length > 0)
@@ -59,24 +77,24 @@ namespace Demo
         }
 
         #region Generic EX : LinnerSearch
-        //public static int LinnerSearch<T>(T[] Arr, T value)
-        //{
+        public static int LinnerSearch<T>(T[] Arr, T value)
+        {
 
-        //    if (Arr?.Length > 0)
-        //    {
+            if (Arr?.Length > 0)
+            {
 
-        //        for (int i = 0; i < Arr.Length; i++)
-        //        {
-        //            if (Arr[i].Equals( value))
-        //                return i;
+                for (int i = 0; i < Arr.Length; i++)
+                {
+                    if (Arr[i].Equals(value))
+                        return i;
 
-        //        }
+                }
 
 
-        //    }
+            }
 
-        //    return -1;
-        //} 
+            return -1;
+        }
         #endregion
 
         #region Non Gereric Linnser Method
