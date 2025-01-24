@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Demo
 {
-    internal class Point : IComparable
+    internal class Point : IComparable<Point>
     {
         public int X { get; set; }
         public int Y { get; set; }
@@ -19,6 +19,18 @@ namespace Demo
         public override string ToString()
         {
             return $"(X = {X} , Y = {Y})";
+        }
+
+        public int CompareTo(Point? other)
+        {
+            if (other is not null)
+            {
+                if (X == other.X) return Y.CompareTo(other.X);
+                else X.CompareTo(other.X);
+
+            }
+
+            return 1;
         }
 
         //public int CompareTo(object? obj)
@@ -49,20 +61,20 @@ namespace Demo
 
         //}
 
-        public int CompareTo(object? obj)
-        {
-            Point P = obj as Point;
+        //public int CompareTo(object? obj)
+        //{
+        //    Point P = obj as Point;
 
-            if (obj is not null)
-            {
+        //    if (obj is not null)
+        //    {
 
-                    if (X == P.X) return Y.CompareTo(P.X);
+        //            if (X == P.X) return Y.CompareTo(P.X);
 
-                    return X.CompareTo(P.X);
+        //            return X.CompareTo(P.X);
 
-            }
-            return -1;
+        //    }
+        //    return 1;
 
-        }
+        //}
     }
 }
